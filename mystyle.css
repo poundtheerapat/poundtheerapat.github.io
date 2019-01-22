@@ -1,0 +1,30 @@
+/*mystyle.css*/
+body{
+	background-color: teal;
+	color: white;
+}
+h1 {
+	color: white;
+}
+.large{
+	font-size: 1.4em;
+	color: violet;
+
+}
+.bg-pink{
+	background-color: pink;
+}
+.border{
+/*	border-style: solid;
+	border-width: 2px;
+	border-color: black;*/
+	border: 2px black solid;
+}
+div {
+/*	margin-top: 3px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;*/
+	margin:3px 10px 5px 10px;
+	padding: 2px 10px 15px 5px;
+}
