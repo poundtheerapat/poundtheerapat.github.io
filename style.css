@@ -1,0 +1,105 @@
+body {
+    background-color: ghostwhite;
+}
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes rgb {
+  0%   {background-color:#845EC2;}
+  55%  {background-color:#A178DF;}
+  100%  {background-color:#BE93FD;}
+}
+
+@keyframes bg-rgb {
+  0%   { background-image: linear-gradient(to right top, #ff06e9, #f100ec, #e100ef, #d100f2, #bf00f5, #b102f5, #a106f6, #910bf6, #810df4, #7010f2, #5c12f0, #4415ee);}
+  25%  { background-image: linear-gradient(to right, #ff06e9, #f100ec, #e100ef, #d100f2, #bf00f5, #b102f5, #a106f6, #910bf6, #810df4, #7010f2, #5c12f0, #4415ee);}
+  50%  { background-image: linear-gradient(to right bottom, #ff06e9, #f100ec, #e100ef, #d100f2, #bf00f5, #b102f5, #a106f6, #910bf6, #810df4, #7010f2, #5c12f0, #4415ee);}
+  75%  { background-image: linear-gradient(to bottom, #ff06e9, #f100ec, #e100ef, #d100f2, #bf00f5, #b102f5, #a106f6, #910bf6, #810df4, #7010f2, #5c12f0, #4415ee); }
+  100%  { background-image: linear-gradient(to left bottom, #ff06e9, #f100ec, #e100ef, #d100f2, #bf00f5, #b102f5, #a106f6, #910bf6, #810df4, #7010f2, #5c12f0, #4415ee); }
+}
+
+#css-zen-garden {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
+}
+
+.page-wrapper{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 45% 55%;
+}
+.intro{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    border:2px solid  rgb(104, 79, 55);
+   
+}
+#zen-supporting{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    border:2px solid rgb(104, 79, 55);
+}
+.sidebar{
+    grid-column-start:2;
+    grid-row: 1/3;
+    border: 2px solid  rgb(104, 79, 55);
+}
+
+p{
+    text-indent: 20px;
+}
+a{
+    color: violet;
+}
+#zen-intro header {
+    grid-column: 1 / span 2;
+    padding: 5%;
+    background-image: linear-gradient(to left bottom, #ff06e9, #f100ec, #e100ef, #d100f2, #bf00f5, #b102f5, #a106f6, #910bf6, #810df4, #7010f2, #5c12f0, #4415ee);
+    animation-name: bg-rgb;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+#zen-intro header h1 {
+    font-size: 80px;
+    color:white;
+    animation-duration: 3s;
+    animation-name: fadein;
+}
+
+#zen-intro header h2 {
+    font-size: 36px;
+    margin-top: 2%;
+    margin-left: 2%;
+    color:white;
+    animation-duration: 10s;
+    animation-name: fadein;
+}
+
+#zen-summary {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 1em;
+    font-style: bold;
+    animation-duration: 3s;
+    animation-name: fadein;
+}
+
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 ,.sidebar h3{
+    font-size: 32px;
+    font-weight: bold;
+    color:white;
+    text-indent: 25px;
+    background-color: orchid;
+    animation-name: rgb;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+footer {
+    text-align: center;
+    margin: 2%;
+}
+
+
