@@ -1,6 +1,5 @@
 
 body {
-    background: #525252;
-    background: -webkit-linear-gradient(to right, #3d72b4, #525252);
+    background: teal;
     background-image: linear-gradient(to right, teal , aqua);
 }
