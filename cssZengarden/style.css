@@ -2,5 +2,5 @@
 body {
     background: #525252;
     background: -webkit-linear-gradient(to right, #3d72b4, #525252);
-    background: linear-gradient(to right, #3d72b4, #525252);
+    background-image: linear-gradient(to right, teal , aqua);
 }
