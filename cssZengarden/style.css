@@ -1,5 +1,5 @@
 body {
-    background-color: snow;
+    background-color: ghostwhite;
 }
 @keyframes fadein {
     from {opacity: 0;}
@@ -24,9 +24,33 @@ body {
     color: black;
 }
 
+.page-wrapper{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 45% 55%;
+}
 .intro{
-    grid-column: 1;
-    grid-row: 1;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    border:2px solid  rgb(104, 79, 55);
+   
+}
+#zen-supporting{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    border:2px solid rgb(104, 79, 55);
+}
+.sidebar{
+    grid-column-start:2;
+    grid-row: 1/3;
+    border: 2px solid  rgb(104, 79, 55);
+}
+
+p{
+    text-indent: 20px;
+}
+a{
+    color: violet;
 }
 #zen-intro header {
     grid-column: 1 / span 2;
@@ -62,27 +86,11 @@ body {
     animation-name: fadein;
 }
 
-.main {
-    grid-column: 1;
-    grid-row: 2;
-}
-.participation{
-    grid-column: 1;
-    grid-row: 1;
-}
-#zen-supporting{
-    grid-column: 2;
-    grid-row: 3;
-}
-
-.preamble, .explanation, .participation, .benefits, .requirements {
-    margin-inline-start: 1%;
-}
-
 .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 ,.sidebar h3{
     font-size: 32px;
     font-weight: bold;
     color:white;
+    text-indent: 25px;
     background-color: orchid;
     animation-name: rgb;
     animation-duration: 5s;
@@ -94,14 +102,4 @@ footer {
     margin: 2%;
 }
 
-.sidebar { 
-    grid-column: 1 ;
-    grid-row: 1 / span 2;
-}
-/*.wrapper {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 100px 100px 100px;
-    background-color: #fff;
-    color: #444;
-}*/
+
