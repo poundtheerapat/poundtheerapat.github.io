@@ -1,0 +1,89 @@
+body {
+    background-color: snow;
+}
+
+
+#css-zen-garden {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
+}
+
+.intro{
+    grid-column: 1;
+    grid-row: 1;
+}
+#zen-intro header {
+    grid-column: 1 / span 2;
+    padding: 5%;
+    background-image: linear-gradient(to left bottom, #ff06e9, #f100ec, #e100ef, #d100f2, #bf00f5, #b102f5, #a106f6, #910bf6, #810df4, #7010f2, #5c12f0, #4415ee);
+}
+
+#zen-intro header h1 {
+    font-size: 72px;
+    color:white;
+    animation-duration: 3s;
+    animation-name: fadein;
+}
+
+#zen-intro header h2 {
+    font-size: 36px;
+    margin-top: 2%;
+    color:white;
+    animation-duration: 10s;
+    animation-name: fadein;
+}
+
+#zen-summary {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 1em;
+    font-style: bold;
+    animation-duration: 3s;
+    animation-name: fadein;
+}
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.main {
+    grid-column: 1;
+    grid-row: 2;
+}
+.participation{
+    grid-column: 1;
+    grid-row: 1;
+}
+#zen-supporting{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+    margin-inline-start: 1%;
+}
+
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 ,.sidebar h3{
+    font-size: 32px;
+    font-weight: bold;
+    color:white;
+    background-color: orchid;
+}
+
+footer {
+    text-align: center;
+    margin: 2%;
+}
+
+.sidebar { 
+        grid-column: 1 ;
+        grid-row: 1 / span 2;
+}
+.
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100px 100px 100px;
+    background-color: #fff;
+    color: #444;
+}
