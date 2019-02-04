@@ -1,0 +1,14 @@
+h1{
+    background-color: teal;
+    color: white;
+}
+.a{
+    background-color: aqua;
+    color: wheat;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#a{
+    background-color: aquamarine;
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
