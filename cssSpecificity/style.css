@@ -1,0 +1,32 @@
+div{
+	display: block;
+}
+h1{
+	background-image: linear-gradient(to right top, #051937, #004d7a,
+	 #008793, #00bf72, #a8eb12);
+	padding: 60px;
+	color: white;
+	text-transform: uppercase;
+}
+body{
+	background-color: skyblue;
+}
+h2,h3{
+	background-image: linear-gradient(to right top, #051937, #004d7a,
+	 #008793, #00bf72, #a8eb12);
+	text-indent: 20px;
+	padding: 10px;
+    width: fit-content;
+    color: white;
+}
+
+#tag-part{
+	width: fit-content;
+}
+
+#tag-part h2{
+	background-color: white;
+    padding: 10px;
+    width: fit-content;
+
+}
