@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="script.js"></script>
+  <title>Lab03:JQuery</title>
+  <link rel="icon" type="image/png" sizes="1000x1000" href="../images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel='stylesheet' href='https://unpkg.com/bulma@0.7.4/css/bulma.min.css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel='stylesheet' href="../css/prism.css">
+  <link rel="stylesheet" href="../css/cheatsheet.css">
+  <link rel="stylesheet" href="../css/mystyle.css">
+</head>
+
+<body>
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-12">
+          <div class="container content">
+            <i class="is-large fas fa-paper-plane"></i>
+            <h1 class="title"><B>Lab03:</B> JQuery</h1>
+            <h2 class="subtitle">
+              by Pound
+            </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          <aside class="is-medium menu">
+            <p class="menu-label">
+              Search Filter..
+            </p>
+            <div id="simpleSearch">
+              <div class="field">
+                <label class="label">Simple Search Style ♥</label>
+                <div class="control">
+                  <input class="input is-rounded" type="text" id="inputAll" placeholder="Search something..">
+                  <p class="help">You can swap to "Advance search" by clicking it!</p><br>
+                  <a class="button is-rounded is-success" id="searchButton">Search</a>
+                  <a class="button is-hovered is-outlined is-rounded is-danger" id="advanceSearchButton">Advance
+                    search</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="field is-horizontal" id="advanceSearch">
+              <div class="control">
+                <label class="label">Advance Search Style ♥</label>
+                <p class="help">You can swap to "Simple search" by clicking it!</p><br>
+                <a class="button is-hovered is-outlined is-rounded is-danger" id="simpleSearchButton">Simple search</a>
+                <a class="button is-hovered is-outlined is-rounded is-link" id="resetButton">Reset</a>
+                <br>
+                <a class="button is-rounded is-success" id="searchAdvanceStyleButton">Search</a>
+                <p class="menu-label">
+                    Filter...
+                </p>
+                <!-- ID -->
+                <label class="label">Search By ID</label>
+                <input class="input is-rounded" type="text" id="ID" placeholder="Search something..">
+                
+                <!-- Name -->
+                <label class="label">Search By Name</label>
+                <input class="input is-rounded" type="text" id="Name" placeholder="Search something..">
+                <!-- Range -->
+                <label class="label">Search By Energy range</label>
+                <input class="input is-rounded" type="text" id="minEnergy" maxlength="4">
+                <p class="menu-label">
+                    To...
+                </p>
+                <input class="input is-rounded" type="text" id="maxEnergy"maxlength="4">
+              </div>
+              <br>
+ 
+              <div class="field">
+                  <div class="control has-icon left">
+                    <!-- Tags -->
+                    <label class="label">Search By Tags</label>
+                    <div class="select is-primary" >
+                      <select name="type" id="tagsSelector">
+                        <option value="all">all</option>
+                        <option value="grain">grain</option>
+                        <option value="snack">snack</option>
+                        <option value="milk">milk</option>
+                        <option value="seed">seed</option>
+                        <option value="undefine">undefine</option>
+                        <option value="legume">legume</option>
+                        <option value="fruit">fruit</option>
+                        <option value="vegetable">vegetable</option>
+                        <option value="nut">nut</option>
+                        <option value="supplement">supplement</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </ul>
+          </aside>
+        </div>
+        <div class="column is-9">
+          <div class="content is-medium">
+            <h3 class="title is-2">¯\_(ツ)_/¯ JSON Data ¯\_(ツ)_/¯   x</h3>
+            <div class="box">
+              <h4 id="const" class="title is-3">Food Data</h4>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+
+                </span>
+                <div class="message-body">
+                  <table class="table" id="table">
+                    <tbody id="tableBody">
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Energy per 100g</th>
+                        <th>Tags</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <section class="section">
+      <div class="container">
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
